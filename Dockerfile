@@ -13,6 +13,7 @@ RUN npm ci
 FROM deps AS build
 COPY . .
 # your package.json builds client with vite and server with esbuild
+ENV NODE_OPTIONS="--max-old-space-size=1536"
 RUN npm run build
 
 # ---- Runtime layer ----

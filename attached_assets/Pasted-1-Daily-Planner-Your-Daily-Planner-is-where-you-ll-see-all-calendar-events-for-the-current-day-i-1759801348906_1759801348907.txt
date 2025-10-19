@@ -1,0 +1,59 @@
+1. Daily Planner
+
+Your Daily Planner is where you’ll see all calendar events for the current day — including appointments generated through your LeadsByNova system or ones you’ve added manually.
+You can easily add events directly to this section, whether they’re client meetings, business reminders, or even personal notes like “pick up a gallon of milk on the way home.”
+There’s also a Notes area for jotting down thoughts, ideas, or to-do items throughout the day.
+
+2. Pipeline View
+
+The Pipeline View gives you a clear visual overview of where every lead is in your process.
+Each lead’s status — such as New, Active, Pre-Qualified, or Archived — can be updated right from their Lead Card using a simple dropdown menu.
+This view helps you instantly identify which leads need attention, which are moving forward, and which may require follow-up or nurturing.
+
+3. Agents
+
+The Agents dropdown lists every agent connected to your system.
+New agents can be added — or existing ones managed — through the Configuration section, accessible via the button at the bottom of the sidebar.
+Only admins have access to the Configuration area, ensuring control and data integrity remain secure.
+
+4. Calendar
+
+The Calendar tab provides a full monthly view of all scheduled events.
+This includes appointments created through your lead system as well as any events you add manually.
+You can easily add new events at any time using the Add Event button, helping you and your team stay organized and on track.
+
+5. New Leads
+
+This is where every new lead first appears.
+Each new contact is displayed as a Lead Card, showing their details, simulated chat responses (if they participated), and any appointments they scheduled.
+From here, admins can assign leads to specific agents with just a few clicks, ensuring timely follow-up by the right person.
+
+6. Pre-Qualified
+
+The Pre-Qualified section is designed for industries that require extra screening — such as real estate, automotive, or finance.
+This area separates leads that meet key criteria or answered certain questions during the simulated chat, allowing agents to prioritize the most promising opportunities.
+
+7. Active Leads
+
+The Active Leads section houses all ongoing, in-progress leads currently being worked by you or your team.
+It’s your hub for tracking conversations, appointments, and potential deals as they develop.
+
+8. Archived
+
+The Archived section is where you can move leads that have gone cold but still have future potential.
+These leads remain safely stored for re-engagement campaigns, making it easy to nurture them later through email or SMS follow-ups.
+
+9. Trash
+
+The Trash section holds any leads that have been marked as “no good” — meaning they’re not a fit for your services or should no longer be pursued.
+While removed from active view, these records can still be referenced later if needed, ensuring nothing is lost accidentally.
+
+10. Consent Forms
+
+The Consent Forms section securely stores every opt-in record for SMS and email communication.
+These records remain accessible even if a lead is deleted or moved to Trash, ensuring you always have verified documentation of consent for compliance and internal campaign use.
+
+In Short
+
+Your Admin Dashboard gives you complete visibility and control over your entire operation — from scheduling and lead management to tracking and compliance.
+Every feature is designed to keep your workflow efficient, your team connected, and your business running smoothly — all in one place.

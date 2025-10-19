@@ -1,0 +1,25 @@
+modules = ["nodejs-20", "web", "postgresql-16"]
+run = "cd apps/submission-form && npm run dev"
+hidden = [".config", ".git", "node_modules", "dist"]
+
+[nix]
+channel = "stable-24_05"
+
+[[ports]]
+localPort = 5001
+externalPort = 80
+
+[env]
+PORT = "5001"
+
+[workflows]
+runButton = "Submission Form App"
+
+[[workflows.workflow]]
+name = "Submission Form App"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "cd apps/submission-form && npm run dev"
+waitForPort = 5001

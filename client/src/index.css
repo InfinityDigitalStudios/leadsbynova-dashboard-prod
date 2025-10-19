@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Crimson+Text:wght@400;600;700&family=Nunito+Sans:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Work+Sans:wght@300;400;500;600;700&family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(210, 40%, 98%);
+  --foreground: hsl(210, 12%, 16%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(210, 12%, 16%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 12%, 16%);
+  --primary: hsl(217, 78%, 21%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 40%, 94%);
+  --secondary-foreground: hsl(215, 25%, 27%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16%, 47%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(210, 12%, 16%);
+  --destructive: hsl(356.3033, 90.5579%, 54.3137%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(214, 32%, 91%);
+  --input: hsl(214, 32%, 91%);
+  --ring: hsl(217, 78%, 21%);
+  --chart-1: hsl(203.8863, 88.2845%, 53.1373%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(210, 40%, 96%);
+  --sidebar-foreground: hsl(210, 12%, 16%);
+  --sidebar-primary: hsl(217, 78%, 21%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(210, 40%, 94%);
+  --sidebar-accent-foreground: hsl(215, 25%, 27%);
+  --sidebar-border: hsl(214, 32%, 91%);
+  --sidebar-ring: hsl(217, 78%, 21%);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 8px;
+  --shadow-2xs: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00), 0px 1px 2px -1px hsl(217, 78%, 21% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00), 0px 1px 2px -1px hsl(217, 78%, 21% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00), 0px 2px 4px -1px hsl(217, 78%, 21% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00), 0px 4px 6px -1px hsl(217, 78%, 21% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00), 0px 8px 10px -1px hsl(217, 78%, 21% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(217, 78%, 21% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(0, 0%, 0%);
+  --foreground: hsl(200, 6.6667%, 91.1765%);
+  --card: hsl(228, 9.8039%, 10%);
+  --card-foreground: hsl(0, 0%, 85.0980%);
+  --popover: hsl(0, 0%, 0%);
+  --popover-foreground: hsl(200, 6.6667%, 91.1765%);
+  --primary: hsl(217, 78%, 21%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(215, 25%, 27%);
+  --secondary-foreground: hsl(210, 40%, 94%);
+  --muted: hsl(0, 0%, 9.4118%);
+  --muted-foreground: hsl(210, 3.3898%, 46.2745%);
+  --accent: hsl(43, 96%, 56%);
+  --accent-foreground: hsl(210, 12%, 16%);
+  --destructive: hsl(356.3033, 90.5579%, 54.3137%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5.2632%, 14.9020%);
+  --input: hsl(207.6923, 27.6596%, 18.4314%);
+  --ring: hsl(217, 78%, 21%);
+  --chart-1: hsl(203.8863, 88.2845%, 53.1373%);
+  --chart-2: hsl(159.7826, 100%, 36.0784%);
+  --chart-3: hsl(42.0290, 92.8251%, 56.2745%);
+  --chart-4: hsl(147.1429, 78.5047%, 41.9608%);
+  --chart-5: hsl(341.4894, 75.2000%, 50.9804%);
+  --sidebar: hsl(228, 9.8039%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85.0980%);
+  --sidebar-primary: hsl(217, 78%, 21%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(215, 25%, 27%);
+  --sidebar-accent-foreground: hsl(210, 40%, 94%);
+  --sidebar-border: hsl(210, 5.2632%, 14.9020%);
+  --sidebar-ring: hsl(217, 78%, 21%);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 8px;
+}
+
+/* Sarah Johnson Theme - Professional Real Estate Blue Gradient Design */
+.theme-sarah-johnson {
+  /* Primary Blue Palette - Professional Navy to Sky Blues */
+  --sj-navy-900: #1e3a8a;          /* Deepest navy - headers, authority */
+  --sj-navy-800: #1e40af;          /* Dark navy - primary actions */  
+  --sj-royal-700: #1d4ed8;         /* Royal blue - emphasis */
+  --sj-royal-600: #2563eb;         /* Bright royal - interactive */
+  --sj-sky-500: #3b82f6;           /* Sky blue - friendly accents */
+  --sj-sky-400: #60a5fa;           /* Light sky - soft highlights */
+  
+  /* Supporting Neutrals - Soft Blue Tints */
+  --sj-soft-50: #f0f6ff;           /* Lightest background */
+  --sj-soft-100: #EAF2FB;          /* Soft sections */
+  --sj-soft-200: #D1E7F7;          /* Input backgrounds */
+  --sj-soft-300: #B8D4EE;          /* Borders and dividers */
+  
+  /* Status Colors - Harmonious with Blue Theme */
+  --sj-success: hsl(159, 100%, 36%);    /* Green for positive actions */
+  --sj-warning: hsl(42, 93%, 56%);      /* Amber for attention */
+  --sj-error: hsl(356, 91%, 54%);       /* Red for errors */
+  
+  /* Typography System */
+  --sj-font-brand: 'Playfair Display', serif;     /* Elegant headings & brand */
+  --sj-font-body: 'Inter', system-ui, sans-serif; /* Clean body text */
+  
+  /* Subtle Signature Gradients Like Dashboard */
+  --sj-gradient-hero: var(--sj-navy-900);  /* Fallback */
+  --sj-gradient-hero-full: linear-gradient(135deg, var(--sj-navy-900) 0%, var(--sj-royal-600) 50%, var(--sj-navy-900) 100%);
+  
+  --sj-gradient-card: var(--sj-soft-100); /* Fallback */
+  --sj-gradient-card-full: linear-gradient(135deg, var(--sj-royal-600) 0%, var(--sj-sky-500) 50%, var(--sj-royal-600) 100%);
+  
+  --sj-gradient-navy: var(--sj-navy-900); /* Fallback */
+  --sj-gradient-navy-full: linear-gradient(135deg, var(--sj-navy-900) 0%, var(--sj-navy-800) 50%, var(--sj-navy-900) 100%);
+  
+  /* Override Theme Colors with Sarah Johnson Palette */
+  --background: var(--sj-soft-50);
+  --foreground: var(--sj-navy-900);
+  --primary: var(--sj-navy-800);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: var(--sj-soft-100);
+  --secondary-foreground: var(--sj-navy-800);
+  --accent: var(--sj-warning);
+  --accent-foreground: var(--sj-navy-900);
+  --border: var(--sj-soft-300);
+  --input: var(--sj-soft-200);
+  --ring: var(--sj-royal-600);
+  
+  /* Update Font System */
+  --font-serif: var(--sj-font-brand);
+  --font-sans: var(--sj-font-body);
+}
+
+/* Enhanced Theme-Aware Gradient Classes */
+.theme-sarah-johnson .animated-gradient-bg {
+  background: var(--sj-gradient-hero);
+  background: var(--sj-gradient-hero-full);
+}
+
+.theme-sarah-johnson .card-light-blue-gradient {
+  background: var(--sj-gradient-card);
+  background: var(--sj-gradient-card-full);
+  border: 1px solid rgba(59, 130, 246, 0.6);
+  box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4), 0 4px 16px rgba(147, 197, 253, 0.3);
+}
+
+.theme-sarah-johnson .card-navy-gradient {
+  background: var(--sj-gradient-navy);
+  background: var(--sj-gradient-navy-full);
+  border: 1px solid rgba(59, 130, 246, 0.7);
+  box-shadow: 0 12px 40px rgba(30, 58, 138, 0.5), 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.theme-sarah-johnson .soft-blue-bg {
+  background-color: var(--sj-soft-100);
+}
+
+.theme-sarah-johnson .custom-input {
+  background-color: var(--sj-soft-200);
+  font-family: var(--sj-font-brand);
+  color: var(--sj-navy-800);
+  border: 1px solid var(--sj-soft-300);
+}
+
+.theme-sarah-johnson .custom-radio-container {
+  background-color: var(--sj-soft-200);
+  border: 1px solid var(--sj-soft-300);
+}
+
+.theme-sarah-johnson .luxury-text,
+.theme-sarah-johnson .form-luxury-text {
+  font-family: var(--sj-font-brand);
+}
+
+.theme-sarah-johnson .form-luxury-text {
+  color: var(--sj-navy-800);
+}
+
+.theme-sarah-johnson .form-title-dark {
+  font-family: var(--sj-font-brand);
+  color: var(--sj-navy-900);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+
+  body {
+    @apply font-sans antialiased text-foreground;
+    background: transparent !important;
+  }
+}
+
+.animated-gradient-bg {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #1e3a8a 100%);
+}
+
+.luxury-text {
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.form-luxury-text {
+  font-family: 'Playfair Display', serif;
+  color: #1E3A8A;
+}
+
+.form-title-dark {
+  font-family: 'Playfair Display', serif;
+  color: #0D1A3A;
+}
+
+.card-light-blue-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #3b82f6 50%, #2563eb 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-light-blue-gradient-reduced {
+  background: #f0f6ff;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.card-navy-gradient {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #1e3a8a 100%);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Gradient Animation for Dynamic Backgrounds */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  25% {
+    background-position: 100% 25%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  75% {
+    background-position: 0% 75%;
+  }
+}
+
+/* Enhanced Gradient Glow Animation */
+@keyframes gradient-glow {
+  0%, 100% {
+    filter: brightness(1) saturate(1);
+    transform: scale(1);
+  }
+  50% {
+    filter: brightness(1.1) saturate(1.2);
+    transform: scale(1.01);
+  }
+}
+
+/* New Leads Button Pulse Animation */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+  }
+}
+
+.new-leads-pulse {
+  animation: pulse-glow 2s infinite;
+}
+
+.soft-blue-bg {
+  background-color: #EAF2FB;
+}
+
+.custom-input {
+  background-color: #D1E7F7;
+  font-family: 'Playfair Display', serif;
+  color: #1E3A8A;
+  border: 1px solid #B8D4EE;
+}
+
+.custom-input::placeholder {
+  color: white;
+  font-family: var(--font-sans);
+}
+
+.custom-radio-container {
+  background-color: #D1E7F7;
+  border: 1px solid #B8D4EE;
+}
+
+/* Dashboard font isolation - always use Inter regardless of configuration */
+.dashboard-isolated {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+}
+
+.dashboard-isolated * {
+  font-family: inherit !important;
+}
+
+/* Prevent iOS Safari zoom on form inputs (eliminates "shifting") */
+@media (max-width: 768px) {
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+}
+
+/* Apply gradient at root level using fixed positioning to prevent gaps */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: transparent !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--primary) 100%);
+  background-color: var(--primary);
+}

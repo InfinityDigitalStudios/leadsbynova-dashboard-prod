@@ -1,0 +1,26 @@
+{
+  "name": "master-real-estate-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:submission-form": "npm --workspace apps/submission-form run dev",
+    "dev:chat": "npm --workspace apps/chat run dev", 
+    "dev:chat2": "npm --workspace apps/chat2 run dev",
+    "dev:dashboard": "npm --workspace apps/dashboard run dev",
+    "dev:all": "concurrently \"npm run dev:submission-form\" \"npm run dev:chat\" \"npm run dev:chat2\" \"npm run dev:dashboard\"",
+    "build:submission-form": "npm --workspace apps/submission-form run build",
+    "build:chat": "npm --workspace apps/chat run build",
+    "build:chat2": "npm --workspace apps/chat2 run build",
+    "build:dashboard": "npm --workspace apps/dashboard run build",
+    "build:all": "npm run build --workspaces",
+    "start:submission-form": "npm --workspace apps/submission-form run start",
+    "start:chat": "npm --workspace apps/chat run start",
+    "start:chat2": "npm --workspace apps/chat2 run start",
+    "start:dashboard": "npm --workspace apps/dashboard run start",
+    "start:all": "concurrently \"npm run start:submission-form\" \"npm run start:chat\" \"npm run start:chat2\" \"npm run start:dashboard\""
+  }
+}

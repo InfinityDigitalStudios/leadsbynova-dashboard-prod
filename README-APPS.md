@@ -96,3 +96,4 @@ Each app is completely independent with its own:
 - Client (React + Vite)
 - Build configuration
 - Storage layer
+Test deployment update.

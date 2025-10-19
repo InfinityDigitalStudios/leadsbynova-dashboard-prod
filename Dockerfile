@@ -14,7 +14,7 @@ FROM deps AS build
 COPY . .
 # your package.json builds client with vite and server with esbuild
 ENV NODE_OPTIONS="--max-old-space-size=2046"
-RUN npm run build
+RUN npx vite build --minify=false && npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
 
 # ---- Runtime layer ----
 FROM node:20-alpine AS runner
